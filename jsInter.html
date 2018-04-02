@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script>
+        // function starString(n){
+        //     let stars = "";
+        //     for(var i = 0; i < n; i++){
+        //         stars += "*";
+        //     }
+        //     console.log(stars);
+        // }
+        // starString(5);
+
+        // function drawStars(arr){
+            
+        //     for(let i = 0; i < arr.length; i++){
+        //         let stars = "";    
+        //         for (let x = 0; x <  arr[i]; x++){
+        //             stars += "*";
+        //         }
+        //         console.log(stars);
+        //     }
+        //     console.log("\n");
+        // }
+        // drawStars([7,2,3,4,5,6]);
+
+        function drawStars(arr){
+        for(let i = 0; i < arr.length - 1; i++){
+            if(typeof arr[i] === 'string' || arr[i] instanceof String){
+                let string = "";
+                let x = arr[i].length;
+                let y = arr[i][0].toLowerCase();
+                for(let j = 0; j < x; j++) {
+                    string += y;
+                    j--;
+                }
+                console.log(string);
+            }
+            
+        }
+    drawStars(["stars"]);
+
+
+    </script>  
+</head>
+<body> 
+</body>
+</html>
